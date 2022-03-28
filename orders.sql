@@ -22,5 +22,7 @@ select SUM(quantity) from orders
 
 SELECT SUM(product_price) FROM orders
 
-select SUM(quantity) from orders
-group by person_id
+select sum(product_price * quantity)
+from orders
+where order_id = 2
+
